@@ -13,3 +13,7 @@ function My_First_Function() {                                  // function to c
 
     document.getElementById("Button_Text").innerHTML = str;
 }
+
+function Alert_Function() {                                  // function to change button text after click 
+    window.alert("Finally, you put my mouse on top");
+}

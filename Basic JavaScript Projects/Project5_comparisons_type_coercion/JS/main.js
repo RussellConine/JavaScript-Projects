@@ -1,8 +1,3 @@
-
-function my_Fn(){               // function to create dictionary
-    document.getElementById("Test").innerHTML = 0/0;
-}
-
 document.write("type of \"Word\": " + typeof "Word");   // check type of a string
 document.write("<br>");                                 // write new line char to html 
 document.write("type of 3: " + typeof 3);               // check type of a number

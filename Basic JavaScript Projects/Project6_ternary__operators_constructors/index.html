@@ -6,9 +6,25 @@
         <script src="JS/main.js"></script>
     </head>
     <body>
-        <button onclick="">Click here</button>
-        <p id="New_and_This"></p>
-        <p id="Nested_Function" onclick=""></p>
-        <p id="nested" onclick="nested()">hi</p>
+        <h3>Ternary Operators</h3>
+        <p>You must be at least 25 to rent a car. Enter your age below:</p>             
+        <input id="Age" value=""/>                                              <!-- Input box for entering age -->
+        <button onclick="Rental_Function()">Can I rent?</button>                <!-- Button to call function to determine if age is allowed to rent -->
+        <p id="Rent"></p>                                                       <!-- Paragraph element to receive output text -->
+
+        <br>
+        <br>
+
+        <h3>Constructor Class</h3>
+        <button onclick="About_My_Dog()">Ask me about my dog!</button>           <!-- Button to call function to create dog object -->
+        <p id="doggy"></p>                                                       <!-- Paragraph element to receive output text -->
+
+        <br>
+        <br>
+
+        <h3>Nested Functions</h3>
+        <button onclick="nested()">Movie Rating!</button>                           <!-- Button to call nested functions that calc movie rating -->
+        <p id="movie_rating"></p>                                                   <!-- Paragraph element to receive output text -->
+
     </body>
 </html>

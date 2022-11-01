@@ -1,7 +1,3 @@
-
-// create global var x
-var x = 10;
-
 function full_Sentence() {      
     var part_1 = "I have ";
     var part_2 = "made this ";

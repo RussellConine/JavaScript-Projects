@@ -4,6 +4,8 @@
         <meta charset="utf-8">
         <title>Basic JS Work</title>
         <link rel="stylesheet" type="text/css" href="css/css_file.css">
+        <script src="JS/slideshow.js" defer></script>    
+         <!--use defer so that all HTML will load, and we can have slideshow on page load (otherwise have to click a dot for page to load)  -->
     </head>
 
     <body>
@@ -39,9 +41,7 @@
             <span class="dot" onclick="currentSlide(2)"></span> 
             <span class="dot" onclick="currentSlide(3)"></span> 
         </div>
-
-        <!-- have to put script at bottom so that body loads first. otherwise slides won't appear when page is first loaded -->
-        <script src="JS/slideshow.js"></script>     
+ 
     </body>
 
 </html>

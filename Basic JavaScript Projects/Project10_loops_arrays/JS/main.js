@@ -1,36 +1,36 @@
-function Call_Loop() {
-    var Digit = "";
+function Call_Loop() {      // function to use while loop
+    var Digit = "";         
     var x = 1;
-    while (x < 11) {
-        Digit += x + "<br>";
-        document.getElementById("Loop").innerHTML = Digit;
-        console.log(x);
-        x++;
+    while (x < 11) {        
+        Digit += x + "<br>";                                    // concat x to digit
+        document.getElementById("Loop").innerHTML = Digit;      
+        console.log(x);                                         // log value of x in console
+        x++;                                                    // increment x
     }
 }
 
-function Length_Calc() {
-    var input_string = document.getElementById("in_str").value;
-    var len = input_string.length;
-    document.getElementById("Length_Out").innerHTML = "Your string is " + len + " characters long";
+function Length_Calc() {                                                                            // function to calculate string length
+    var input_string = document.getElementById("in_str").value;                                     // retrieve user's input string
+    var len = input_string.length;                                                                  // calc string length
+    document.getElementById("Length_Out").innerHTML = "Your string is " + len + " characters long"; // return string length sentence
 }
 
-function for_Loop() {
-    var instruments = ["Guitar", "Cello", "Tuba"];
+function for_Loop() {                                                                               // function to use for loop
+    var instruments = ["Guitar", "Cello", "Tuba"];                                                  // create array of instruments
     var Content = "";
     var i;
-    for (i = 0; i < instruments.length; i++) {
-        Content += instruments[i] + "<br>";
+    for (i = 0; i < instruments.length; i++) {                                                      // for loop to iterate through objects in array
+        Content += instruments[i] + "<br>"; 
     }
-    document.getElementById("List_of_Instruments").innerHTML = Content;
+    document.getElementById("List_of_Instruments").innerHTML = Content;                             // print out list of instruments to webpage
 }
 
 
-function array_Function() {
-    var arr = ["Braves", "Marlins", "Mets", "Phillies", "Nationals"];
+function array_Function() {                                                                         // function that uses array
+    var arr = ["Braves", "Marlins", "Mets", "Phillies", "Nationals"];                               // array of strings
     var Content = "";
     for (i = 0; i < arr.length; i++) {
-        Content += arr[i] + "<br>";
+        Content += arr[i] + "<br>";                                                                 // concat strings to Content variable
     }
-    document.getElementById("Array").innerHTML = Content;
+    document.getElementById("Array").innerHTML = Content;                                           // return Content variable to html page
 }

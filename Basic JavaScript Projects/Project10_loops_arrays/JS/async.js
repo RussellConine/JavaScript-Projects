@@ -1,1 +1,1 @@
-alert(document.getElementById("p1").innerHTML);
+alert(document.getElementById("p1").innerHTML);         // use alert box to show use of async keyword

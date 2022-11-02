@@ -34,3 +34,15 @@ function array_Function() {                                                     
     }
     document.getElementById("Array").innerHTML = Content;                                           // return Content variable to html page
 }
+
+function let_fn() {                                                                         // function that creates object using let
+    let plane = {
+        manufacturer: "Cessna",
+        model: "Skyhawk",
+        wingspan: "50ft",
+        powerplant: "4 Cyl Piston",
+        weight: "1300 lbs",
+        cost: "$400,000",
+    };     
+    document.getElementById("Let_object").innerHTML = "I bought a " + plane.manufacturer + " " + plane.model + " that cost me " + plane.cost + "! :("                     
+}

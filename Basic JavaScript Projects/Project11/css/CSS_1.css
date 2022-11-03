@@ -10,7 +10,7 @@ input[type=text], input[type=tel] {
     box-sizing: border-box;
   }
   
-  input[type=submit] {
+  button{
     width: 100%;
     background-color: #2a56b4;
     color: white;

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Basic JS Work</title>
+    </head>
+    <body>
+        <script>
+            var ages = [2, 4, 6, 7, 12, 25, 42];
+            var ages = [2, 4, 6, 7, 12];
+            checkAge = (age) => age >= 18;
+            // function checkAge(age) {
+            //     return age >= 18;
+            // }
+            function myFunc() {
+                document.getElementById('displayAge').innerHTML = ages.some(checkAge);
+            }
+        </script>
+
+        <button onclick="myFunc()">Click to run</button>
+        <p id="displayAge"></p>
+
+
+    </body>
+</html>

@@ -7,13 +7,17 @@ h1, h3 {
     color: white;
 }
 
+h1 {
+    text-align: center;
+}
+
 div {
     color: rgba(0, 0, 0, 0.884);
     font-weight: bold;
 }
 
 #menuBG {
-    width: 400px;
+    width: 600px;
     height: 470px;
     margin: 10px auto;
 }
@@ -63,7 +67,8 @@ div {
 }
 
 #btnOrder {
-    margin: 10px 0px 0px 100px;
+    display: block;
+    margin: 10px auto;
     width: 100px;
     height: 40px;
 }

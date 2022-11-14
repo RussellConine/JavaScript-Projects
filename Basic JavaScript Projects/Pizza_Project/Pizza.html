@@ -8,8 +8,18 @@
         <link rel="stylesheet" href="./Pizza_CSS/Pizza.CSS">
     </head>
     <body>
+        <script>
+            // add fade out class to body. Inline script necessary to prevent body loading initially until extra script is downloaded by browser
+            document.body.classList.add('fade-out'); 
+
+            // remove fade out class from body once the page is loaded
+            window.addEventListener('DOMContentLoaded', () => {
+                document.body.classList.remove('fade-out');
+            }); 
+        </script>
+
         <div id="menuBG">
-            <h1 style="margin:0 0px 0 20px;">Pizza Drill Tutorial</h1>
+            <h1 style="margin:0 0px 0 20px; font-size: 2vw;">Pizza Drill Tutorial</h1>      <!--set dynamic font size using vw unit-->
             <input id="btnOrder" type="button" onclick="getReceipt()" value="Place Order">
             <form id="frmMenu">
                 <div class="menu left">
@@ -49,5 +59,6 @@
 
             </form>
         </div>
+
     </body>
 </html>

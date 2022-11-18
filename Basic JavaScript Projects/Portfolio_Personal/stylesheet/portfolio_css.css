@@ -36,8 +36,7 @@ img:hover {
 /* On screens 576px and smaller the images will be 100px tall and centered vertically in the column */
 @media screen and (max-width: 576px) {
     img, #iframe_container, iframe {
-        height: 100px;
-        margin-top: 150px;
+        height: 150px;
     }
 }
 
@@ -174,8 +173,6 @@ footer {
     position: relative;
 }
 
-
-
 #text-background-box {
     margin: auto;
     margin-top: 10%;
@@ -205,14 +202,11 @@ of the video to avoid showing white space below the video */
 
 /* Screens that are 576px and smaller will not display the background video */
 @media screen and (max-width: 576px) {
-    #bg_home_video {
-        display: none;
-    }
     .main-header {
-        width: 100%;
+        width: 80%;
     }
     .Video_Text {
-        height: 28vh;
+        height: fit-content;
     }
 }
 /***** END HOME STYLING*****/
@@ -233,12 +227,7 @@ of the video to avoid showing white space below the video */
     height: auto; /* The height of the container is automatically adjusted based on the content it is displaying */
     padding-top: 4%; /* Adds a small padding to the top of the slideshow container */
     position: relative; /* This sets the container relative to its normal positioning */
-    margin:auto; /* This will horizontally center the container on the page */
-}
-
-/* Remove the underline from the previous and next buttons on the slideshow */
-#Slideshow_Container a {
-    text-decoration: none;
+    margin: auto; /* This will horizontally center the container on the page */
 }
 
 /* Images contained within the slideshow */
@@ -341,7 +330,7 @@ of the video to avoid showing white space below the video */
     padding-top: 2%; /* This ensures there is space between the top of the column and our headings */
     height: 400px; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
     background-color: #e7e7e7; /* Sets the background color of the columns with class Column_1 */
-    overflow: hidden;
+    overflow: auto;
 }
 
 /* Screens 576px and smaller will display a scroll bar if the text overflows the column height */
@@ -390,7 +379,7 @@ of the video to avoid showing white space below the video */
 .GH_logo:hover {
     transition: 0.4s;
     filter: invert(.9);
-    scale: 1; /*override scaling of images. Doesn't look good with inverted colors*/
+    box-shadow: none;
 }
 /***** END GITHUB IMAGE EFFECT  *****/
 

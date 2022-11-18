@@ -17,7 +17,7 @@
             <a href="#About" title="About">About</a>
             <a href="#GitHub" title="GitHub">GitHub</a>
             <a href="#Projects" title="Projects">Projects</a>
-            <a href="#Contact" title="Contact">Contact</a>
+            <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
         </div>
 
         <!-- Background video -->
@@ -36,6 +36,60 @@
             </div>
         </div>
 
+        <!-- Slideshow section added -->
+        <div id="Slideshow">
+            <div id="Slideshow_Background"> 
+                <div id="Slideshow_Container">
+                    <!-- Slide 1 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/headshot.jfif" alt="Picture of yourself">
+                        <div class="text">Let's build something cool!</div>
+                    </div>
+                    <!-- Slide 2 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/HTML_CSS_and_JavaScript.jpeg" alt="HTML, CSS, and JS logos"> 
+                        <div class="text">I am a full-stack software developer,trained in: Python, HTML, CSS, JavaScript, and SQL.</div>
+                    </div>
+                    <!-- Slide 3 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/can_image.jpg" alt="Python logo">
+                        <div class="text">I've built software to record, plot, and analyze vehicle's CAN traffic,</div>
+                    </div>
+                    <!-- Slide 4 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/magpylib_logo.png" alt="C# logo">
+                        <div class="text">to model magnetic sensor systems,</div>
+                    </div>
+                    <!-- Slide 5 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/solenoid.jpg" alt="SQL logo"> 
+                        <div class="text">and to stitch together animations of electromagnetic simulation.</div>
+                    </div>
+                    <!-- Slide 6 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/paper_airplane.jpg" alt="Majestically tossing a paper airplane into the breeze"> 
+                        <div class="text"><a class="white-text contact" onclick="openForm()">Contact me now!</a></div> 
+                    </div>
+
+
+                    <!-- Previous and next buttons -->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br> <!-- Adds a space between the slideshow images and the dots -->
+
+                <!-- Slideshow dots (dots call currentSlide(n) and input n into function, telling js which dot was clicked) -->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                    <span class="dot" onclick="currentSlide(5)"></span> 
+                    <span class="dot" onclick="currentSlide(6)"></span> 
+                </div>
+            </div>
+        </div>
+
         <!--About section-->
         <div class="Row" id="About">
             <!--Left column-->
@@ -46,7 +100,7 @@
             <div class="Column_1">
                 <h1>About</h1>
                 <p>
-                    I am a software developer and mechanical engineer who loves building things! I like spending time outdoors in the mountains, and like playing and watchign soccer.
+                    I am a software developer and mechanical engineer who loves building things! I like spending time outdoors in the mountains, and like playing and watching soccer.
                     <br>
                     <br>I am a graduate of The Tech Academy's Python Developer Boot Camp, and trained and experienced in the following web and programming languages: Python, HTML, CSS, JavaScript, and SQL. 
                     <br>
@@ -71,6 +125,27 @@
             <div class="Column_2">
                 <a href="https://github.com/RussellConine" target="_blank"><img src="./images/GitHub-logo_original.png" class="GH_logo" alt="GitHub Logo"></a>
             </div>
+            </div>
+        </div>
+
+        <!-- Contact form -->
+        <div id="Contact">
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+            <div class="form-popup" id="myForm">
+                <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container">
+                    <h1>Contact</h1>
+                    <label for="name"><b>Name</b></label>
+                    <input type="text" placeholder="Type your name here" name="name" required>
+                    <label for="phone"><b>Phone</b></label>
+                    <input type="text" placeholder="Type your phone number here" name="phone">
+                    <label for="email"><b>Email</b></label>		
+                    <input type="text" placeholder="Type your email address here" name="email" required>
+                    <label for="message"><b>Message</b></label>
+                    <input type="text" placeholder="Type your message here" name="message">
+        
+                    <button type="submit" class="btn">SUBMIT</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                </form>
             </div>
         </div>
 
@@ -100,35 +175,11 @@
             </div>
         </div>
 
-        <!--Contact section-->
-        <div class="Row" id="Contact">
-            <!--Contact image, left column-->
-            <div class="Column_1 Column_tall">
-                <br>
-                <br>
-                <img src="./images/paper_airplane.jpg" alt="Contact_Image">
-            </div>
-            <!--Contact form, right column-->
-            <div class="Column_2 Column_tall">
-                <h1>Contact</h1>
-                <!--This specifies where and how to send the form data; we are leaving it blank-->
-                <form action="" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
-                    <label>Name:</label>
-                        <input type="text" placeholder="Please enter your name here">
-                    <label>Email:</label>
-                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
-                    <label>Message:</label>
-                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
-                        <input type="submit" value="SUBMIT">
-                </form>
-            </div>
-        </div>
-
         <!--Footer section-->
         <footer>
             <p>Website built by Russell Conine&nbsp;|&nbsp;2022</a></p>
         </footer>
 
-
+    <script src="JS/portfolio.js"></script>
     </body>
 </html> 
